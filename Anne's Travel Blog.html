@@ -10,153 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" />
     <link href="./Anne&#39;s Travel Blog_files/css2" rel="stylesheet" />
     <link href="./Anne&#39;s Travel Blog_files/css2(1)" rel="stylesheet" />
-    <style>
-      body {
-        background: linear-gradient(
-          180.5deg,
-          rgb(0, 128, 128) 8.5%,
-          rgb(174, 206, 100) 118.2%
-        );
-      }
-
-      div {
-        background: radial-gradient(
-          circle at 10% 20%,
-          rgb(161, 255, 206) 0%,
-          rgb(250, 255, 209) 90%
-        );
-        border: thick double teal;
-        border-radius: 30px;
-
-        max-width: 800px;
-        display: block;
-        margin: 35px auto 10px;
-      }
-
-      .headings {
-        color: rgb(4, 173, 173);
-        display: block;
-        text-align: center;
-        font-family: "Lemonada", cursive;
-      }
-
-      .links {
-        text-decoration: underline rgb(4, 177, 177);
-        color: rgb(4, 177, 177);
-
-        font-weight: lighter;
-      }
-
-      .links:hover {
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      h1 {
-        font-weight: 900;
-        line-height: 30px;
-        font-size: 46px;
-      }
-
-      h2 {
-        padding: 10px;
-        font-family: "Slabo 27px", serif;
-        display: block;
-        text-align: center;
-        color: rgb(4, 173, 173);
-        font-weight: lighter;
-      }
-
-      span {
-        margin-top: 35px;
-      }
-      img {
-        width: 400px;
-        display: block;
-        margin: 0 auto;
-      }
-
-      figcaption {
-        display: block;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-
-      h3,
-      p {
-        color: rgb(2, 92, 92);
-        display: block;
-      }
-
-      h3 {
-        text-align: center;
-
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      p {
-        margin: 0 auto;
-        max-width: 450px;
-        text-align: left;
-        color: rgb(2, 92, 92);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 150%;
-      }
-
-      button {
-        display: block;
-        margin: 30px auto;
-        border: 1px solid darkcyan;
-        color: white;
-        border-radius: 30px;
-        background-color: rgb(0, 128, 128);
-        transition: all 200ms ease-in-out;
-        padding: 15px;
-        box-shadow: 5px 5px 5px rgba (0, 0, 0, 0.2);
-        transition: all 200ms ease-in-out;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        font-weight: 400px;
-      }
-
-      button:hover {
-        cursor: pointer;
-        background-color: white;
-        border: 1px solid darkcyan;
-        color: rgb(0, 128, 128);
-      }
-
-      figcaption {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color: rgb(0, 128, 128);
-      }
-      ul {
-        max-width: 450px;
-        margin: 20px auto 20px;
-        display: block;
-      }
-
-      li {
-        color: rgb(2, 92, 92);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 150%;
-      }
-
-      hr {
-        max-width: 300px;
-        margin: 0 auto;
-      }
-
-      footer {
-        text-align: center;
-        color: #636262;
-        font-size: 14px;
-        font-family: monospace;
-      }
-    </style>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <section>
@@ -169,10 +23,7 @@
           ><br />(Saint Augustine) <br /><span>🌍🚌🧭</span>
         </h2>
         <figure>
-          <img
-            src="./Anne&#39;s Travel Blog_files/1962176.jpg"
-            alt="travel bus"
-          />
+          <img src="images/1962176.jpg" alt="travel bus" />
           <figcaption>
             <a class="links" href="http://www.freepik.com/"
               >Designed by Freepik</a
@@ -204,10 +55,7 @@
           Have a look at the benefits of travelling
         </h4>
         <figure>
-          <img
-            src="./Anne&#39;s Travel Blog_files/DSC00090_-_Outback.JPG"
-            alt="Australia Outback"
-          />
+          <img src="images/DSC00090_-_Outback.JPG" alt="Australia Outback" />
           <figcaption>Somewhere around Alice Springs, Australia</figcaption>
         </figure>
         <ul>
@@ -228,10 +76,7 @@
         </ul>
         <button>Get Inspiration!</button>
         <figure>
-          <img
-            src="./Anne&#39;s Travel Blog_files/DSC01519.JPG"
-            alt="typical Market place in India"
-          />
+          <img src="images/DSC01519.JPG" alt="typical Market place in India" />
           <figcaption>Market street, Bangalore, India</figcaption>
         </figure>
 
@@ -291,37 +136,12 @@
           </li>
         </ul>
         <figure>
-          <img
-            src="./Anne&#39;s Travel Blog_files/100_1158_bearbeitet.jpg"
-            alt="Street in Morocco"
-          />
+          <img src="images/100_1158_bearbeitet.jpg" alt="Street in Morocco" />
           <figcaption>Street to Agdz, Morocco</figcaption>
         </figure>
       </div>
       <footer>Coded by Anne Krauel<br />2021</footer>
     </section>
-    <script>
-      function getInspiration() {
-        let name = prompt("What is your name?");
-        let eMail = prompt("What's your e-mail address?");
-        let age = prompt("How old are you?");
-        if (age >= 16) {
-          alert(
-            "🌍🌞🚌" +
-              "\r\n" +
-              "Great " +
-              name +
-              ", we'll be in touch very soon!"
-          );
-        } else {
-          alert(
-            "😕" + "\r\n" + "Sorry " + name + ", but you're a little young."
-          );
-        }
-      }
-
-      let applyButton = document.querySelector("button");
-      applyButton.addEventListener("click", getInspiration);
-    </script>
+    <script src="src/script.js"></script>
   </body>
 </html>
